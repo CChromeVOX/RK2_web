@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <ul>  
+        <li><a href="main.html">Продукты</a></li>  
+        <li><a href="addit.html">Посты</a></li>  
+        <li></li>  
+        <li><button onclick="logout()">Выйти из аккаунта</button></li>
+    </ul>
+    <div id="albums-section">
+        <h2 style="margin: auto, 5vw; text-align: center;">Продукты</h2>
+        <div id="post-items-container"></div>
+    </div>
+    <script src="show.js"></script>
+    <script>
+        if(sessionStorage.getItem('sessionuser')!=null){
+            listProducts('post-items-container');
+    
+}else {
+    alert("Вы не можете увидеть контент, так как не вошли в аккаунт");
+    window.location.href = "login.html";
+} 
+    </script>
+
+</body>
+</html>

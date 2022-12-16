@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="title">Регистрация</div>
+    <div class="content">
+    <form onsubmit="signup()">
+        <div class="user-details">
+            <div class="input-box">
+            <span class="details">Имя пользователя</span>
+            <input class="input-box" type="text" name="username" id="username">
+            </div>
+            <div class="input-box">
+            <span class="details"> Эл. почта</span>
+            <input class="input-box" type="email" name="email" id="email">
+            </div>
+            <div class="input-box">
+                <span class="details"> Пароль</span>
+                <input class="input-box" type="password" name="password" id="password">
+                </div>
+        </div>
+        <button class="button" type="submit">Зарегистрироваться</button>
+    </form>
+    <a href="login.html">Уже зарегистрированы? Войдите тут!</a>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

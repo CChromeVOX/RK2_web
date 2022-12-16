@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="title">Вход на сайт</div>
+    <div class="content">
+    <form onsubmit="loginFunc()">
+        <div class="user-details">
+        <div class="input-box">
+        <span class="details">Имя пользователя</span>
+        <input class="input-box" type="text" name="username" id="username">
+        </div>
+        <div class="input-box">
+        <span class="details"> Пароль</span>
+        <input class="input-box" type="password" name="password" id="password">
+        </div>
+    </div>
+        <button class="button" type="submit">Войти</button>
+        <p id="result">Войдите чтоб перейти к главной странице</p>
+    </form>
+    <a href="index.html">Не зарегистрированы? Сделайте это прямо сейчас</a>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
